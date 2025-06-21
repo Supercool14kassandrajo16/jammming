@@ -1,38 +1,84 @@
-.App {
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #121212;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
   text-align: center;
+  margin-top: 30px;
+  color: #1DB954; /* Spotify green */
+  font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 50px;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.section {
+  background-color: #181818;
+  border-radius: 16px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1DB954;
   color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #1ed760;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.track {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #282828;
+  border-radius: 8px;
+}
+
+.track p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.playlist-name-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
 }
